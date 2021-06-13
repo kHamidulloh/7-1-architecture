@@ -5,16 +5,21 @@
 // Base
 @import './base/base';
 @import './base/typography';
+@import './fonts';
 @import './base/normalize';
 
 // COMPONENTS
 @import './components/btn';
 @import './components/card';
 @import './components/dropdown';
+@import './components/text';
 
 // LAYOUT
 @import './layout/header';
 @import './layout/nav';
+@import './layout/teams';
+@import './layout/motivation';
+@import './layout/stories';
 @import './layout/footer';
 @import './layout/forms';
 @import './layout/list';

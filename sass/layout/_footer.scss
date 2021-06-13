@@ -1,0 +1,36 @@
+.footer {
+    background-color: $color-green-29;
+    & .container {
+        display: flex;
+    }
+    & .hero__list {
+        margin-top: 2.5rem;
+    }
+  &__center {
+
+    &__text {
+        width: 21rem;
+        @include text15;
+        color: $color-white;
+        opacity: 0.6;
+        margin-left: 12.5rem;
+        margin-right: 36rem;
+    }
+  }
+  &__right {
+    &__text {
+        width: 25.5rem;
+        @include text15;
+        color: $color-white;
+        opacity: 0.6;
+    }  
+      &__imgs {
+        margin-bottom: 5.1em; 
+        margin-left: 14rem;
+        &__gmail {
+            margin-left: 1.6rem;
+            margin-right: 1.6rem;  
+        }
+      }
+  }
+}

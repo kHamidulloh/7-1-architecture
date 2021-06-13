@@ -1,0 +1,22 @@
+.motivation {
+    background-color: $color-light-7e;
+    padding-top: 7.6rem;
+    padding-bottom: 7.6rem;
+    position: relative;
+   &::after {
+       @include baImages (20rem,12.2rem,url(/images/mativation-img.png));
+       position: absolute;
+       bottom: 0;
+       left: 0;
+   }
+    & .container {
+        display: flex;
+        
+    }
+    &__text {
+        margin-right: 26rem;
+        @include text48;
+        // color: $color-green-34;
+        
+     }
+}

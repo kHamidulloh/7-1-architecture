@@ -1,0 +1,70 @@
+.teams {
+    width: 100%;
+    background-color: $color-grren-34;
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+    position: relative;
+  & .container {
+     display: flex;
+     &::after  {
+      @include baImages (10rem,24.4rem,url(/images/teams-right-img.png));
+      position: absolute;
+      bottom: 0;
+      right: 0;
+     }
+     
+  }
+ 
+    &__left {
+ 
+       &__title {
+          width: 44rem;
+          @include text48;
+          color: $color-white;
+          &::before {
+             @include baElements (5rem,4px);
+             background-color: $color-light-7e;
+             display: flex;
+             margin-bottom: 5.4rem;
+          }
+       }
+    }
+ 
+    &__right {
+      margin-left: auto;
+      position: relative;
+ 
+       &__info {
+
+         &.first-before::before {
+            @include baImages (7.2rem,7.2rem,url(../../images/teams-befor-2.png));
+            }
+            &.second-before::before {
+            @include baImages (7.2rem,7.2rem,url(/images/teams-befor-3.png));
+            }
+        
+         &::before {
+              @include baImages (7.2rem,7.2rem,url(/images/teams-befor-1.png));
+              display: flex;
+              align-items: center;
+              position: absolute;
+              left: -10.7rem;
+            }
+             
+
+          &__title {
+           @include text18;
+           color:$color-light-7e;
+           margin-bottom: 1.6rem;
+
+             
+          }
+          &__text {
+             width: 44rem;
+             @include text15;
+             color:$color-white;
+             margin-bottom: 3.2rem;
+          }
+       }
+    }
+ }
