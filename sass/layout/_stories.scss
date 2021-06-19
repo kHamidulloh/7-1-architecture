@@ -15,6 +15,14 @@
     @include text48;
     color: $color-white;
     text-align: center;
+    @include respond (tab-port) {
+      width: 49rem;
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
     &__span {
       color: $color-blue-c7;
     }
@@ -24,6 +32,9 @@
  &__bottom {
   display: flex;
   justify-content: space-between;
+  @include respond (tab-port) {
+    display: inherit;
+  }
   &::before {
     @include baImages (20rem,10rem,url(/images/stories-bottom-img.png));
     position: absolute;
@@ -32,7 +43,11 @@
   }
   &__info {
   width: 35rem;
- 
+  @include respond (tab-port) {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
     &__comment {
       @include text15;
       color: $color-white;
@@ -41,6 +56,10 @@
       margin-bottom: 2.4rem;
       z-index: 2;
       position: relative;
+      @include respond (tab-port) {
+        width: 57.3rem;
+        margin-left: 5.7rem;
+      }
       &::before {
         @include baImages (6.7rem,5.6rem,url(/images/“.png));
         display: flex;
@@ -48,6 +67,9 @@
         z-index: -1;
         top: -3.6rem;
         left: 14.1rem;
+        @include respond (tab-port) {
+          left: 25rem;
+        }
       }
     }
     &__name {
@@ -64,6 +86,10 @@
       line-height: 1.8rem;
       color: $color-white;
       text-align: center;
+      @include respond (tab-port) {
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
     &__logo {
       text-align: center;
@@ -72,9 +98,13 @@
         margin: 0 auto;
       }
       &__img {
-      width: 6.2rem;
-      height: 6.2rem;
-      margin-top: 3.2rem;
+        width: 6.2rem;
+        height: 6.2rem;
+        margin-top: 3.2rem;
+        @include respond (tab-port) {
+          margin-left: auto;
+          margin-right: auto;
+        }
      }
     }
     

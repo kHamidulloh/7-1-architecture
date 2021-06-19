@@ -17,6 +17,11 @@
         margin-right: 26rem;
         @include text48;
         // color: $color-green-34;
-        
+        @include respond (tab-port) {
+            font-size: 3.2rem;
+            line-height: 3.2rem;
+            margin-right: 8.4rem;
+            margin-left: 5.7rem;
+        }
      }
 }
