@@ -1,5 +1,8 @@
 .hero__list {
     display: flex;
+    @include respond (phone) {
+       display: none;
+    }
  &__item {
     list-style: none;
     margin-right: 40px;
@@ -20,6 +23,24 @@
         color: $color-light-7e;
     }
  }
+}
+.footer__list {
+   @include respond (phone) {
+      display: block;
+      display: flex;
+      justify-content: center;
+      margin-left: 4rem;
+  }
+  &__link {
+   @include respond (phone) {
+      
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      color: $color-white;
+   }
+  }
 }
 
 // HERO2

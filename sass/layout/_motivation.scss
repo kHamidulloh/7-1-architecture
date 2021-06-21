@@ -3,6 +3,10 @@
     padding-top: 7.6rem;
     padding-bottom: 7.6rem;
     position: relative;
+    @include respond (phone) {
+      padding-top: 8.3rem;
+      padding-bottom: 8.3rem;
+    }
    &::after {
        @include baImages (20rem,12.2rem,url(/images/mativation-img.png));
        position: absolute;
@@ -11,17 +15,35 @@
    }
     & .container {
         display: flex;
-        
+        @include respond (phone) {
+            display: inherit ;
+        }
     }
     &__text {
         margin-right: 26rem;
         @include text48;
-        // color: $color-green-34;
+        color: $color-green-34;
         @include respond (tab-port) {
             font-size: 3.2rem;
             line-height: 3.2rem;
             margin-right: 8.4rem;
             margin-left: 5.7rem;
+        }
+        @include respond (phone) {
+            width: 32.7rem;
+            font-size: 3.2rem;
+            line-height: 3.2rem;
+            text-align: center;
+            color: $color-green-34;
+        }
+     }
+
+     &__btn {
+        @include respond (phone) {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2.4rem;
         }
      }
 }

@@ -1,0 +1,45 @@
+.clients {
+    background-color: $color-green-34;
+    padding: 14rem 0;
+    position: relative;
+    &__container {
+        &::before {
+            @include baImages (20rem,20rem,url(/images/clients-bg.png));
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &__imgs {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 6.4rem;
+            &__img {
+                width: 16.5rem;
+                height: 2.8rem;
+            }
+            &__img2 {
+                width: 18.4rem;
+                height: 2.3em;
+            }
+            &__img3 {
+                width: 18rem;
+                height: 2.8rem;
+            }
+            &__img4 {
+                width: 16.5rem;
+                height: 2.8rem;
+            }
+            &__img5 {
+                width: 9.8rem;
+                height: 4.5rem;
+            }
+        }
+        &__top {
+            &__title {
+                @include text48 ;
+                color: $color-white;
+                text-align: center;
+            }
+        }
+    }
+}
